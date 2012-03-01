@@ -90,6 +90,7 @@ entry:
     // src/Acme/HelloBundle/DataFixtures/ORM/LoadUserData.php
     namespace Acme\HelloBundle\DataFixtures\ORM;
 
+    use Doctrine\Common\Persistence\ObjectManager;
     use Doctrine\Common\DataFixtures\FixtureInterface;
     use Acme\HelloBundle\Entity\User;
 
@@ -172,6 +173,7 @@ the order in which fixtures are loaded.
     // src/Acme/HelloBundle/DataFixtures/ORM/LoadUserData.php
     namespace Acme\HelloBundle\DataFixtures\ORM;
 
+    use Doctrine\Common\Persistence\ObjectManager;
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
     use Acme\HelloBundle\Entity\User;
@@ -206,6 +208,7 @@ of 2:
     // src/Acme/HelloBundle/DataFixtures/ORM/LoadGroupData.php
     namespace Acme\HelloBundle\DataFixtures\ORM;
 
+    use Doctrine\Common\Persistence\ObjectManager;
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
     use Acme\HelloBundle\Entity\Group;
@@ -240,6 +243,7 @@ references:
     // src/Acme/HelloBundle/DataFixtures/ORM/LoadUserGroupData.php
     namespace Acme\HelloBundle\DataFixtures\ORM;
 
+    use Doctrine\Common\Persistence\ObjectManager;
     use Doctrine\Common\DataFixtures\AbstractFixture;
     use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
     use Acme\HelloBundle\Entity\UserGroup;
@@ -288,6 +292,7 @@ component when checking it:
     // src/Acme/HelloBundle/DataFixtures/ORM/LoadUserData.php
     namespace Acme\HelloBundle\DataFixtures\ORM;
 
+    use Doctrine\Common\Persistence\ObjectManager;
     use Doctrine\Common\DataFixtures\FixtureInterface;
     use Symfony\Component\DependencyInjection\ContainerAwareInterface;
     use Symfony\Component\DependencyInjection\ContainerInterface;
